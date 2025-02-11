@@ -5,6 +5,9 @@ public class Singleton {
     // Objektbildung in der Klasse --> static
     private static Singleton instance;
 
+    // Feld, auf das NACH der Objektbildung zugegriffen wird
+    private int counter;
+
     private Singleton(){
 
     }  
@@ -22,7 +25,17 @@ public class Singleton {
 
     }
 
+    // ... im Objekt
 
+    // Getter für counter
+    public int getCounter() {
+        return counter;
+    }
+
+    // Event? --> counter  = counter + 1
+    public void actOnEvent() {
+        counter ++;
+    }
 
 
 
