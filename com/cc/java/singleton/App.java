@@ -7,11 +7,14 @@ public class App {
 
     public static void main(String[] args) {
         
-        Singleton obj = new Singleton();
+        Singleton obj = Singleton.getInstance();
         Helper.output(obj);
 
-        Singleton obj2 = new Singleton();
+        Singleton obj2 = Singleton.getInstance();
         Helper.output(obj2);
+
+        
+
     }
 
 
